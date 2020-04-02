@@ -4,24 +4,29 @@
     box-sizing: border-box;
 }
 
+body,
 html {
-    font-family: 'Noto Sans', sans-serif;
-    color: #ffffff;
     scroll-behavior: smooth;
     height: 100%;
-}
-
-body {
-    width: 100%;
-    height: 100%;
     border: 2px solid rgba(215, 250, 149, 1);
-    /* background: url('/assets/images/landscape-small.jpg') no-repeat center center/cover fixed; */
+    font: 400 15px/1.8 Lato, "sans-serif";
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: Noto sans-serif, sans-serif;
+    color: #fff;
 }
 
 #intro {
-    width: 100%;
+    /* width: 100%; */
 
-    height: 100%;
+    /* height: 100%; */
 
     background: url('/assets/images/blend-small.jpg');
     background-attachment: fixed;
@@ -76,15 +81,15 @@ a {
 /* Header Section */
 
 .header {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px auto 30px;
+    margin: auto;
+    padding: 80px 50px;
 }
 
 .header #heading {
-    margin-top: 120px;
+    margin-top: 60px;
     font-size: 2rem;
     align-self: center;
 }
@@ -97,8 +102,8 @@ h1 {
 }
 
 .header .info {
-    width: 60%;
-    border: #ec2e2e solid 1px;
+    width: 70%;
+    /* border: #fff solid 1px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -110,6 +115,7 @@ h1 {
 form#contact {
     display: flex;
     flex-direction: column;
+    margin: 10px 0px;
     padding: 10px;
     border: 1px solid #fff;
     box-sizing: border-box;
@@ -145,7 +151,8 @@ form#contact {
 #contact label[for="location"] address,
 #contact label[for="email-address"] span,
 #contact label[for="phone"] span {
-    border: #ec2e2e solid 1px;
+    /* border: #ec2e2e solid 1px; */
+    margin-bottom: 5px;
 }
 
 #contact .email-submit {
@@ -156,21 +163,21 @@ form#contact {
     width: 40px;
     margin-right: 10px;
     padding: 10px;
-    border: #ec2e2e solid 1px;
+    /* border: #ec2e2e solid 1px; */
 }
 
 #contact .email-submit input[type="email"] {
     padding: 10px 2px;
-    width: 60%;
+    width: 70%;
     margin-right: 2px;
     border: none;
-    border: #ec2e2e solid 1px;
+    /* border: #ec2e2e solid 1px; */
 }
 
 #contact .email-submit #submit {
     padding: 10px;
     border: none;
-    border: #d4ce7b solid 1px;
+    /* border: #d4ce7b solid 1px; */
 }
 
 /* inputs , buttons */
@@ -180,11 +187,17 @@ input {
     font-size: 100%;
 }
 
+input:focus {
+    border: 1px solid #0684fa;
+    outline: none;
+}
+
 .profile {
     display: flex;
     justify-content: center;
-    padding: 2px;
-    border: 1px solid #fff;
+    margin: 10px 0px;
+    padding: 10px;
+    /* border: 1px solid #fff; */
 }
 
 .profile img {
@@ -195,7 +208,9 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #fff;
+    margin: 10px 0px;
+    padding: 10px;
+    /* border: 1px solid #fff; */
 }
 
 .resume a {
@@ -220,7 +235,7 @@ input {
 
 /* Social Media Section */
 .connect {
-    width: 60%;
+    width: 70%;
     border: #fff solid 1px;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -259,22 +274,18 @@ input {
 
 /* About Me Section */
 #about {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px auto;
+    margin: auto;
     background: #2c2a2a;
+    padding: 80px 50px;
 }
 
 .aboutme {
-    width: 60%;
+    width: 70%;
     border: #fff solid 1px;
     display: grid;
     grid-template-columns: 20% 80%;
     align-items: initial;
-    margin: 0px auto 40px;
+    margin: auto;
 }
 
 .aboutme h2 {
@@ -282,7 +293,7 @@ input {
 }
 
 .aboutme #title {
-    margin: 10px;
+    margin: 10px 5px;
     border-bottom: #b8c8d1 solid 2px;
 }
 
@@ -297,15 +308,59 @@ input {
     color: #f8f8bf;
 }
 
+/* Skill Section */
+
 .skills {
-    width: 60%;
+    width: 70%;
     border: #fff solid 1px;
     display: grid;
     grid-template-columns: 20% 80%;
     align-items: initial;
-    margin: 0px auto 40px;
+    margin: auto;
+    padding: 10px 5px;
 }
 
+.technologies {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.skill-set .technologies li {
+    list-style: none;
+}
+
+
+/* Projects Section */
+
+#projects {
+    height: 100%;
+    margin: auto;
+    background: url("/assets/images/firering.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 50px;
+}
+
+#portfolio {
+    border: #0684fa solid 1px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.project {
+    max-width: 100%;
+    border: #b8c8d1 solid 1px;
+}
+
+.project img {
+    width: 300px;
+    max-width: 100%;
+}
 
 
 
