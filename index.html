@@ -9,54 +9,120 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="author">
-            <h3>Simon Magabe</h3>
-        </div>
-        <ul class="main">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <div class="info">
-            <div class="info-left">
-                <div class="title">
-                    <h1>I Am A Technology Enthusiast.</h1>
-                </div>
-                <p id="intro">
-                    I believe in effeciency, quality, and stability. Technology helps in achieving that.
-                    I use different technologies and software tools to simplify complicated and hard
-                    tasks to simple tasks hence saving time and other more resources.
-                </p>
+    <article id="intro">
+        <nav class="navbar">
+            <div class="author">
+                <h3>Simon Magabe</h3>
+            </div>
+            <ul class="main">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-                <form action="" id="form">
+        <!-- Header -->
+        <header class="header">
+            <section>
+                <h1>I am a technology Enthusiast</h1>
+            </section>
+            
+            <section class="info">
+                <form action="" id="contact">
                     <label for="location">
-                        <i class="fas fa-map-marker-alt 2x"></i>
-                        27439 NewCastle Rd, Gambier OH, 43022
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <address>27439 NewCastle Rd, Gambier OH, 43022</address>
                     </label>
-                    <label for="emailaddress">
-                        <i class="fas fa-envelope 2x"></i>
-                        simblitz@gmail.com
+                    <label for="email-address">
+                        <i class="fas fa-envelope fa-lg"></i>
+                        <span><a href="mailto:simblitz@gmail.com">simblitz@gmail.com</a></span>
                     </label>
                     <label for="phone">
-                        <i class="fas fa-mobile-alt 2x"></i>
-                        740-485-7809
+                        <i class="fas fa-mobile-alt fa-lg"></i>
+                        <span>740-485-7809</span>
                     </label>
 
-                    <label for="email"><i class="fas fa-paper-plane"></i></label>
-                    <input type="email" name="email" placeholder="Shoot me an email">
-                    <button id="submit" form="form"><i class="fas fa-angle-right 2x"></i></button>
+                    <div class="email-submit">
+                        <label for="email"><i class="fas fa-paper-plane fa-lg"></i></label>
+                        <input type="email" id="email" name="email" placeholder="Shoot me an email" required>
+                        <button id="submit" form="contact"><i class="fas fa-angle-right 2x"></i></button>
+                    </div>
                 </form>
+                <picture class="profile">
+                    <img src="/assets/images/SMagabe_1800.jpg" alt="simon's profile image" width="200px">
+                </picture>
+                <aside class="resume">
+                    <a href="#">
+                        <i class="fas fa-file-download fa-lg"></i>
+                        <span>Resume</span>
+                    </a>
+                </aside>
+            </section>
 
+            <!-- Social Media -->
+            <section class="connect">
+                <h2>connect with me:</h2>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="#"><i class="fab fa-codepen fa-3x"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                </div>
+            </section>
+            
+
+            <!-- Scroll Down Arrow -->
+            <div class="scroll">
+                <a href="#about"><i class="far fa-arrow-alt-circle-down fa-3x"></i></a>
             </div>
-            <div class="profile">
-                <img src="/assets/images/SMagabe_1800.jpg" alt="simon's profile image" width="400px">
+        </header>
+    </article>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="aboutme">
+            <h2><span id="title">About Me</span></h2>
+            <p>
+                When it comes to technical resolution I believe in <span>efficiency</span>,
+                <span>quality</span>, <span>simplicity</span> and <span>stability</span>. 
+                I use different technology and software tools to build infrustracture 
+                that are robust and capable of simplifying tasks and resolving issues 
+                quickly hence saving <span>time</span> and other more resources.
+            </p>
+        </div>
+        <div class="skills">
+            <h2><span id="title">My Skills</span></h2>
+            <div class="technologies">
+                <h3><span>Technologies</span></h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, sed excepturi distinctio velit quibusdam laudantium deleniti nostrum ipsum quidem eaque, animi aperiam rerum illum culpa laborum blanditiis natus consequuntur similique.</p>
             </div>
         </div>
-    </div>
+    </section>
+
+    <source>
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;
+        font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;
+        Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, 
+        sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;
+        border-radius:3px" href="https://unsplash.com/@ninjason?utm_medium=referral&amp;
+        utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" 
+        rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jason Leung">
+        <span style="display:inline-block;padding:2px 3px">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                style="height:12px;width:auto;position:relative;vertical-align:middle;
+                top:-2px;fill:white" viewBox="0 0 32 32">
+                <title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg>
+        </span>
+        <span style="display:inline-block;padding:2px 3px">
+            Jason Leung
+        </span></a>
+    </source>
+
+    <script src="/assets/scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   
 </body>
 </html>

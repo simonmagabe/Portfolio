@@ -6,10 +6,35 @@
 
 html {
     font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     width: 100%;
+    height: 100%;
+    border: 2px solid rgba(215, 250, 149, 1);
+    /* background: url('/assets/images/landscape-small.jpg') no-repeat center center/cover fixed; */
+}
+
+#intro {
+    width: 100%;
+
+    height: 100%;
+
+    background: url('/assets/images/blend-small.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header Section */
+
+.header {
+    width: 100%;
+    margin: 30px auto;
 }
 
 /* Navbar Section */
@@ -50,40 +75,224 @@ body {
 .main li a {
     text-decoration: none;
     font-size: 18px;
+    color: #fff;
 }
 
-/* Content Section */
+/* Header Section */
 
-.content {
-    width: 70%;
-    margin: 30px auto;
-}
-
-.content .info {
-    width: 90%;
+.header {
+    width: 100%;
     display: flex;
-    margin: 10px auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto 30px;
 }
 
-.info-left {
-    padding: 40px;
+.header .info {
+    width: 60%;
+    border: #ec2e2e solid 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 50px auto;
+}
+
+/* Contact Form */
+
+form#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+#contact label[for="location"],
+#contact label[for="email-address"],
+#contact label[for="phone"] {
+    display: flex;
+}
+
+#contact label[for="location"] i,
+#contact label[for="email-address"] i,
+#contact label[for="phone"] i {
+    width: 40px;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact label[for="location"] address,
+#contact label[for="email-address"] span,
+#contact label[for="phone"] span {
+    padding: 10px 2px;
+}
+
+#contact label[for="location"] i,
+#contact label[for="email-address"] i,
+#contact label[for="phone"] i,
+#contact label[for="location"] address,
+#contact label[for="email-address"] span,
+#contact label[for="phone"] span {
+    border: #ec2e2e solid 1px;
+}
+
+#contact .email-submit {
+    display: flex;
+}
+
+#contact .email-submit label {
+    width: 40px;
+    margin-right: 10px;
+    padding: 10px;
+    border: #ec2e2e solid 1px;
+}
+
+#contact .email-submit input[type="email"] {
+    padding: 10px 2px;
+    width: 60%;
+    margin-right: 2px;
+    border: none;
+    border: #ec2e2e solid 1px;
+}
+
+#contact .email-submit #submit {
+    padding: 10px;
+    border: none;
+    border: #d4ce7b solid 1px;
+}
+
+/* inputs , buttons */
+button,
+input {
+    font-family: inherit;
+    font-size: 100%;
 }
 
 .profile {
-    padding: 40px;
-}
-
-.info-left .title {
-    padding: 10px;
-}
-
-.info-left #intro {
-    line-height: 1.4;
-    letter-spacing: 2px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    border: 1px solid #fff;
 }
 
 .profile img {
     border-radius: 20px;
-    box-shadow: 4px 4px 0px 0px #d4ce7b;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+
+.resume a {
+    color: #fff;
+    padding: 5px;
+    border: #b8c8d1 solid 1px;
+    background: transparent;
+}
+
+.resume a i {
+    margin: 5px;
+}
+
+.resume a i,
+.resume a span {
+    padding: 5px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+/* Social Media Section */
+.connect {
+    width: 60%;
+    border: #fff solid 1px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    margin: 50px auto 80px;
+}
+
+.connect h2,
+.connect .social {
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+.connect .social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social a {
+    color: #fff;
+}
+
+/* Scroll Down Section */
+.scroll {
+    width: 50px;
+    align-self: center;
+}
+
+.scroll a {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    text-decoration: none;
+    color: #f5c5c5;
+}
+
+/* About Me Section */
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    background: #2c2a2a;
+}
+
+.aboutme {
+    width: 60%;
+    border: #fff solid 1px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: initial;
+    margin: 0px auto 40px;
+}
+
+.aboutme h2 {
+    margin-top: 5px;
+}
+
+.aboutme #title {
+    margin: 10px;
+    border-bottom: #b8c8d1 solid 2px;
+}
+
+.aboutme p {
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+    margin: 10px 0px;
+}
+
+.aboutme p span {
+    font-weight: 600;
+    color: #f8f8bf;
+}
+
+.skills {
+    width: 60%;
+    border: #fff solid 1px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: initial;
+    margin: 0px auto 40px;
 }
