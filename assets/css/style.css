@@ -344,7 +344,7 @@ input:focus {
 }
 
 #portfolio {
-    border: #0684fa solid 1px;
+    /* border: #0684fa solid 1px; */
     width: 70%;
     margin: auto;
     display: grid;
@@ -354,12 +354,20 @@ input:focus {
 
 .project {
     max-width: 100%;
+    outline: none;
     border: #b8c8d1 solid 1px;
+    border-radius: 4px;
+    background: #1a1919;
 }
 
 .project img {
     width: 300px;
     max-width: 100%;
+}
+
+.project p,
+.port-nav {
+    padding: 10px;
 }
 
 
