@@ -24,15 +24,13 @@ html {
 }
 
 #intro {
-    /* width: 100%; */
-
-    /* height: 100%; */
-
+    height: 100%;
     background: url('/assets/images/blend-small.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
 }
 
 /* Navbar Section */
@@ -333,7 +331,6 @@ input:focus {
 /* Projects Section */
 
 #projects {
-    height: 100%;
     margin: auto;
     background: url("/assets/images/firering.jpg");
     background-attachment: fixed;
@@ -346,9 +343,9 @@ input:focus {
 #portfolio {
     /* border: #0684fa solid 1px; */
     width: 70%;
-    margin: auto;
+    margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
@@ -361,13 +358,44 @@ input:focus {
 }
 
 .project img {
-    width: 300px;
+    width: 400px;
     max-width: 100%;
+    border-radius: 2px;
 }
 
-.project p,
-.port-nav {
+.project #title {
+    background: #f8f8bf;
+    margin: 5px 0px;
     padding: 10px;
+    color: #1a1919;
+    text-align: center;
+}
+
+.description {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.port-nav {
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+}
+
+.port-nav {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.port-nav button {
+    padding: 5px;
+    border: none;
+    border: #b8c8d1 solid 2px;
+    border-radius: 4px;
 }
 
 
